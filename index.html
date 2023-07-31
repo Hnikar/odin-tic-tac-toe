@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link rel="stylesheet" href="style.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tic-Tac-Toe</title>
+	</head>
+	<body>
+		<header>Tic-Tac-Toe</header>
+		<div class="container">
+			<!-- Gameboard -->
+			<div class="board">
+				<button class="field"></button>
+				<button class="field"></button>
+				<button class="field"></button>
+
+				<button class="field"></button>
+				<button class="field"></button>
+				<button class="field"></button>
+
+				<button class="field"></button>
+				<button class="field"></button>
+				<button class="field"></button>
+			</div>
+			<!-- Player Popup -->
+			<div id="player-popup" class="popup">
+				<h2>Player Settings</h2>
+				<div class="input-group">
+					<label for="playerX">Player X Name:</label>
+					<input type="text" id="playerX" />
+				</div>
+				<div class="input-group">
+					<label for="playerO">Player O Name:</label>
+					<input type="text" id="playerO" />
+				</div>
+				<div class="input-group">
+					<label for="playerXBot">Is Player X a bot?</label>
+					<select id="playerXBot">
+						<option value="0">No</option>
+						<option value="1">Yes (Random Move)</option>
+						<option value="2">Yes (Minimax Algorithm)</option>
+					</select>
+				</div>
+				<div class="input-group">
+					<label for="playerOBot">Is Player O a bot?</label>
+					<select id="playerOBot">
+						<option value="0">No</option>
+						<option value="1">Yes (Random Move)</option>
+						<option value="2">Yes (Minimax Algorithm)</option>
+					</select>
+				</div>
+				<!-- Result Popup -->
+				<button id="start-game-btn">Start Game</button>
+			</div>
+			<div id="result-popup" class="popup">
+				<h2 id="result-message">Test result-message</h2>
+				<div class="button-container">
+					<button class="quit-btn">Quit</button>
+					<button class="rematch-btn">Rematch</button>
+				</div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
